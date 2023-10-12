@@ -36,7 +36,12 @@
 
         <div class="shopping-itens-expo">
             <div class="fitness-main-image">
+                <div class="image-carousel">
                 <a href="##"><img src="media/fitness/anilhasCross.jpg"></a><br>
+                <img src="media/fitness/anilha 55lbs.jpg" alt="anilha55lbs">
+                <img src="media/fitness/anilha 35 lbs.jpg" alt="anilha35lbs">
+                </div>
+                
                 Anilhas Emborrachadas para Crossfit:<br>
             </div>          
             
@@ -45,6 +50,40 @@
             <a href="fitnessProd.html" class="buy-button">Saiba mais</a>
         </div>
         
+        <script>
+            // Lista de URLs das imagens do carrossel
+            const imageUrls = [
+                     "media/fitness/anilhasCross.jpg",
+                     "media/fitness/anilha 55lbs.jpg",
+                     "media/fitness/anilha 35 lbs.jpg",
+                     // Adicione mais URLs de imagens conforme necessário
+                 ];
+             
+                 const carouselInterval = 5000; // Intervalo em milissegundos (5 segundos)
+             
+                 const imageContainer = document.querySelector(".image-carousel");
+                 let currentImageIndex = 0;
+             
+                 function updateCarousel() {
+                     imageContainer.innerHTML = ''; // Limpa o conteúdo atual
+             
+                     // Cria uma nova imagem e adiciona ao carrossel
+                     const img = document.createElement("img");
+                     img.src = imageUrls[currentImageIndex];
+                     img.alt = "Anilhas Cross";
+                     imageContainer.appendChild(img);
+         
+             
+                     // Atualiza o índice da imagem atual
+                     currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+                 }
+             
+                 // Chama a função de atualização do carrossel a cada intervalo
+                 setInterval(updateCarousel, carouselInterval);
+             
+                 // Atualiza o carrossel inicialmente
+                 updateCarousel();
+             </script>
     </body>
 
     <footer>
@@ -76,39 +115,4 @@
         - Maximino Coelho 
         - Pedro Quintas <br>
     </div>
-
-    <script>
-        // Lista de URLs das imagens do carrossel
-        const imageUrls = [
-                 "media/fitness/anilhasCross.jpg",
-                 "media/fitness/anilha 55lbs.jpg",
-                 "media/fitness/anilha 35 lbs.jpg",
-                 // Adicione mais URLs de imagens conforme necessário
-             ];
-         
-             const carouselInterval = 1000; // Intervalo em milissegundos (5 segundos)
-         
-             const imageContainer = document.querySelector(".image-carousel");
-             let currentImageIndex = 0;
-         
-             function updateCarousel() {
-                 imageContainer.innerHTML = ''; // Limpa o conteúdo atual
-         
-                 // Cria uma nova imagem e adiciona ao carrossel
-                 const img = document.createElement("img");
-                 img.src = imageUrls[currentImageIndex];
-                 img.alt = "Anilhas Cross";
-                 imageContainer.appendChild(img);
-     
-         
-                 // Atualiza o índice da imagem atual
-                 currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
-             }
-         
-             // Chama a função de atualização do carrossel a cada intervalo
-             setInterval(updateCarousel, carouselInterval);
-         
-             // Atualiza o carrossel inicialmente
-             updateCarousel();
-         </script>
 </html>

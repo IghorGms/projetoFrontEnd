@@ -36,7 +36,12 @@
 
         <div class="shopping-itens-expo">
             <div class="fitness-main-image">
-                <a href="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/107323/01/sv01/fnd/BRA/w/1000/h/1000/fmt/png"><img src="media/soccer/shoePumaSoccer1.png"></a><br>
+                <div class="image-carousel">
+                    <a href="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/107323/01/sv01/fnd/BRA/w/1000/h/1000/fmt/png"><img src="media/soccer/shoePumaSoccer1.png"></a><br>
+                    <img src="media/soccer/shoePumaSoccer2.png" alt="chuteira2">
+                    <img src="media/soccer/shoePumaSoccer3.png" alt="chuteira3">
+                </div>
+                
                 Chuteira Puma<br>
                 campo<br><br>
 
@@ -48,6 +53,40 @@
             <a href="soccerProd.html" class="buy-button">Saiba mais!</a>
         </div>
         
+        <script>
+            // Lista de URLs das imagens do carrossel
+            const imageUrls = [
+                     "media/soccer/shoePumaSoccer1.png",
+                     "media/soccer/shoePumaSoccer2.png",
+                     "media/soccer/shoePumaSoccer3.png",
+                     // Adicione mais URLs de imagens conforme necessário
+                 ];
+             
+                 const carouselInterval = 5000; // Intervalo em milissegundos (5 segundos)
+             
+                 const imageContainer = document.querySelector(".image-carousel");
+                 let currentImageIndex = 0;
+             
+                 function updateCarousel() {
+                     imageContainer.innerHTML = ''; // Limpa o conteúdo atual
+             
+                     // Cria uma nova imagem e adiciona ao carrossel
+                     const img = document.createElement("img");
+                     img.src = imageUrls[currentImageIndex];
+                     img.alt = "Anilhas Cross";
+                     imageContainer.appendChild(img);
+         
+             
+                     // Atualiza o índice da imagem atual
+                     currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+                 }
+             
+                 // Chama a função de atualização do carrossel a cada intervalo
+                 setInterval(updateCarousel, carouselInterval);
+             
+                 // Atualiza o carrossel inicialmente
+                 updateCarousel();
+             </script>
     </body>
 
     <footer>
