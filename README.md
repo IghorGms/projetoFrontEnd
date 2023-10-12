@@ -3,3 +3,4 @@
  apresentacao entrega 23/10
 
  - index já completo.
+ - Carrossel já esta funcionando
