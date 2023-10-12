@@ -4,3 +4,4 @@
 
  - index já completo.
  - Carrossel já esta funcionando
+ - Php funcional
