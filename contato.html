@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+<title> Formulário Padrão </title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>        
+            <div class="icon-menu-top">
+                <span> <a href="index.html"> <img src="media/icons/navIcon.png" height="100px"></a> 
+            </div>            
+            
+            <div class="navbar-itens">
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="fitness.html">Fitness</a> </li>
+                    <li> <a href="soccer.html">Futebol</a> </li>
+                    <li> <a href="tennis.html">Tenis</a> </li>
+                    <li> <a href="contato.html">Contato</a> </li>
+                </ul>
+            </div>
+                   
+        </nav>
+    </div>
+    <header>
+        <div class = "cabecalho">
+            <h1> Deseja comprar algo? pode deixar! <br> nós entramos em contato com você! </h1>
+    </header>
+    <form>
+        
+            Olá Cliente!         
+            
+                    <div class="input-padrao">
+
+                        <label for="nome">Primeiro, Como prefere ser chamado?</label><br>
+                        <input type="text" id="nome" class="input-global" required placeholder="Nome">
+                        
+                        <label for="sobrenome"></label><br>
+                        <input type="text" id="sobrenome" class="input-global" required placeholder="Sobrenome"><br>
+                        
+                        <br>Agora, me diz o teu e-mail!
+                        <label for="email"></label><br>
+                        <input type="email" id="E-Mail" class="input-global" required placeholder="seuemail@dominio.com"><br>
+                        
+                        <br>Me informa um telefone (se quiser!)
+                        <label for="telefone"></label><br>
+                        <input type="tel" id="Telefone" class="input-global" placeholder="(XX) XXXXX-XXXX"><br>
+                        
+                        <br>Me diz tua data de nascimento (vai que a gente consegue um desconto), rsrs! 
+                        <label for="datanascimento"></label><br>
+                        <input type="date" id="data" class="input-global"><br>
+                        
+                        <div class="option-select">
+                            Qual produto tu curtiu?<br>
+                            
+                            <select>
+                                <optgroup label="pedido">
+                                    <option>Anilhas de Crossfit</option>
+                                    <option>Chuteira Puma</option>
+                                    <option>Raquete Wilson</option>
+                                </select>
+                            </div>
+                            <br><label for="opinion">Me diz quais horarios ou qual melhor dia pra a gente entrar em contato contigo!</label><br>
+                            <textarea id="opinion" name="opinion" rows="15" cols="70"> ou se tu tiver algum questionamento extra, pode aproveitar aqui também!</textarea> <br>  
+                            
+                            <div class="botaozinho">
+                                <br><button input type="submit" id="botaozinho" class="botao-padrao"> Enviar </button>
+                            </div>
+
+                    </div>
+                
+
+
+
+    </form> 
+    <footer>
+        Desenvolvido por: <br>
+        - Alice Lira
+        - Ana Paula
+        - Carlos Augusto
+        - Ighor Gomes
+        - Maximino Coelho 
+        - Pedro Quintas 
+    </footer>
+</body>
+</html>
