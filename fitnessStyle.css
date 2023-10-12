@@ -1,0 +1,124 @@
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+
+.nav-container{
+    top: 0px;
+    position: sticky;
+    display: 100vw;
+}
+
+.icon-menu-top{
+    padding-left: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+nav ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 50px 20px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: aliceblue;
+    border: 0px solid;
+    border-radius: 15px;    
+}
+
+.header-fitness{
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.shopping-itens-expo{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+.shopping-itens-expo img{
+    border: 5px dashed darkblue;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.button-contact{
+   margin: 30px 0 20px 250px;
+}
+
+.buy-button {
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: inset;
+    box-shadow: -7px 7px;
+}
+
+.buy-button:hover {
+    box-shadow: none;
+    background-color: black;
+    color: gold;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: 2s;
+}
+
+.footer-container{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-list{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.footer-list ul{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.footer-list ul a{
+    text-decoration: none;
+    color: black;
+}
+.development{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
