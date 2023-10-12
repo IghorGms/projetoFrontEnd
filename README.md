@@ -5,3 +5,5 @@
  - index já completo.
  - Carrossel já esta funcionando
  - Php funcional
+
+ - Fazer o css do confirmar dados
