@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-color: lightblue;
 }
 
 
@@ -13,6 +13,7 @@ body{
     top: 0px;
     position: sticky;
     display: 100vw;
+    border: 1px solid black;
 }
 
 .icon-menu-top{
@@ -65,14 +66,14 @@ nav ul li a:hover {
 }
 
 .marquee{
-    background-color: white;
+    background-color: lightblue;
     position:relative;
     overflow: hidden;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    padding: 35px;
     height: 100%;
     border: 1px solid black;
-
 }
 
 @keyframes marquee {
@@ -81,52 +82,61 @@ nav ul li a:hover {
 }
 
 .sales-track {
-    font-size: 40px;
+    font-size: 70px;
+    font-weight: bold;
     position: relative;
     white-space: nowrap;
-    will-change: transform;
     animation: 10s infinite linear marquee;
 }
 
-.shopping-itens-expo{
-    font-size: 25px;
-    display: flex;
+.options-container{
+    font-size: 40px;
     justify-content: space-between;
     text-align: center;
-    margin: 20px 20px 20px 20px;
+    border: 20px double blue;
+    padding: 20px;
 }
 
-.shopping-itens-expo img{
+.options-container img{
     border: 5px dashed darkblue;
-    height: 300px;
+    height: 250px;
     border-radius: 20px;
+}
+
+.text-categorias{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-image{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
 }
 
 
 .footer-container{
-    background-color: white;
-    border: 1px solid black;
-    color: black;
+    background-color: lightblue;
+    color: aliceblue;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 .footer-list{
     font-size: 30px;
     text-align: center;
-    padding-bottom: 40px;
-    margin-top: 40px;
+    /* padding-bottom: 40px;
+    margin-top: 40px; */
 }
 
 .footer-list ul{
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
 }
 
 .footer-list ul a{
     text-decoration: none;
-    color: black;
+    color: aliceblue;
 }
 .development{
     font-size: 20px;
