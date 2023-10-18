@@ -53,6 +53,7 @@ if (empty($_SESSION['errors'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
+    <link rel="shortcut icon" href="media/icons/navIcon.png" type="image/x-icon" />
 <title> Formulário Padrão </title>
 </head>
 <body>
@@ -60,7 +61,7 @@ if (empty($_SESSION['errors'])) {
     <div class="nav-container">
         <nav>        
             <div class="icon-menu-top">
-                <span> <a href="index.html"> <img src="media/icons/navIcon.png" height="100px"></a> 
+                <span> <a href="index.html"> <img src="media/icons/browserIcon.png" height="100px"></a> 
             </div>            
             
             <div class="navbar-itens">
@@ -77,24 +78,24 @@ if (empty($_SESSION['errors'])) {
     </div>
     <header>
         <div class = "cabecalho">
-            <h1> Deseja comprar algo? pode deixar! <br> nós entramos em contato com você! </h1>
+            <h1> Deseja comprar algo? pode deixar! <br> Nós entramos em contato com você! </h1>
     </header>
     <form action="contato.php" method="POST">
         
-            Olá Cliente!         
-            
-                    <div class="input-padrao">
-                        <!-- <?php
-                            if (isset($_SESSION['errors'])) {
-                            foreach ($_SESSION['errors'] as $error) {
-                            echo '<div class="error-message">' . $error . '</div>';
-                             }
-                            unset($_SESSION['errors']); // Limpe os erros da sessão após exibi-los
-                            }
-                            ?> -->
-
-                        <label for="nome">Primeiro, Como prefere ser chamado?*</label><br>
-                        <input type="text" id="nome" class="input-global" name="Nome" placeholder="Nome">
+        
+        Olá Cliente!         
+        <div class="input-padrao">
+            <!-- <?php
+                if (isset($_SESSION['errors'])) {
+                    foreach ($_SESSION['errors'] as $error) {
+                        echo '<div class="error-message">' . $error . '</div>';
+                    }
+                    unset($_SESSION['errors']); // Limpe os erros da sessão após exibi-los
+                }
+                ?> -->
+                
+                <label for="nome">Primeiro, Como prefere ser chamado?*</label><br>
+                <input type="text" id="nome" class="input-global" name="Nome" placeholder="Nome">
                         
                         <label for="sobrenome"></label><br>
                         <input type="text" id="sobrenome" class="input-global" name="Sobrenome" placeholder="Sobrenome"><br>
@@ -109,11 +110,10 @@ if (empty($_SESSION['errors'])) {
                         
                         <br>Me diz tua data de nascimento (vai que a gente consegue um desconto), rsrs! 
                         <label for="datanascimento"></label><br>
-                        <input type="date" id="data" class="input-global"><br>
+                        <input type="date" id="data" class="input-global">
                         
                         <div class="option-select">
-                            Qual produto tu curtiu?<br>
-                            
+                            Qual produto tu curtiu?<br>                      
                             <select>
                                 <optgroup label="pedido">
                                     <option>Anilhas de Crossfit</option>
@@ -135,13 +135,15 @@ if (empty($_SESSION['errors'])) {
 </form>
 
     <footer>
-        Desenvolvido por: <br>
-        - Alice Lira
-        - Ana Paula
-        - Carlos Augusto
-        - Ighor Gomes
-        - Maximino Coelho 
-        - Pedro Quintas 
+        <div class="development">
+            Desenvolvido por: <br>
+            - Alice Lira
+            - Ana Paula
+            - Carlos Augusto
+            - Ighor Gomes
+            - Maximino Silva 
+            - Pedro Quintas 
+        </div>
     </footer>
 </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: #5999B3;
 }
 
 
@@ -13,7 +13,6 @@ body{
     top: 0px;
     position: sticky;
     display: 100vw;
-    border: 1px solid black;
 }
 
 .icon-menu-top{
@@ -73,7 +72,6 @@ nav ul li a:hover {
     margin-top: 10rem;
     padding: 35px;
     height: 100%;
-    border: 1px solid black;
 }
 
 @keyframes marquee {
@@ -90,11 +88,11 @@ nav ul li a:hover {
 }
 
 .options-container{
+    background-color: lightblue;
     font-size: 40px;
     justify-content: space-between;
     text-align: center;
-    border: 20px double blue;
-    padding: 20px;
+    border: 20px double black;
 }
 
 .options-container img{
@@ -116,18 +114,16 @@ nav ul li a:hover {
 
 
 .footer-container{
-    background-color: lightblue;
-    color: aliceblue;
+    background-color: #5999B3; 
     justify-content: center;
     text-align: center;
     padding: 20px;
 }
 
 .footer-list{
+    color: black;
     font-size: 30px;
     text-align: center;
-    /* padding-bottom: 40px;
-    margin-top: 40px; */
 }
 
 .footer-list ul{
@@ -136,10 +132,14 @@ nav ul li a:hover {
 
 .footer-list ul a{
     text-decoration: none;
-    color: aliceblue;
+    color: black;
 }
 .development{
     font-size: 20px;
     text-align: center;
     margin-top: 20px;
 }
+
+
+/* Color for footer and body #5999B3 */
+/* color for contrast - aliceblue */
