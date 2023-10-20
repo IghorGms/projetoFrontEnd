@@ -52,37 +52,37 @@
         </div>
         
         <script>
-            // Lista de URLs das imagens do carrossel
+            
             const imageUrls = [
                      "media/fitness/anilhaCross.png",
                      "media/fitness/anilha 55lbs.jpg",
                      "media/fitness/anilha 35 lbs.jpg",
-                     // Adicione mais URLs de imagens conforme necessário
+                     
                  ];
              
-                 const carouselInterval = 2000; // Intervalo em milissegundos (5 segundos)
+                 const carouselInterval = 2000; 
              
                  const imageContainer = document.querySelector(".image-carousel");
                  let currentImageIndex = 0;
              
                  function updateCarousel() {
-                     imageContainer.innerHTML = ''; // Limpa o conteúdo atual
+                     imageContainer.innerHTML = ''; 
              
-                     // Cria uma nova imagem e adiciona ao carrossel
+                     
                      const img = document.createElement("img");
                      img.src = imageUrls[currentImageIndex];
                      img.alt = "Anilhas Cross";
                      imageContainer.appendChild(img);
          
              
-                     // Atualiza o índice da imagem atual
+                     
                      currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
                  }
              
-                 // Chama a função de atualização do carrossel a cada intervalo
+                 
                  setInterval(updateCarousel, carouselInterval);
              
-                 // Atualiza o carrossel inicialmente
+                
                  updateCarousel();
              </script>
     </body>
@@ -109,11 +109,10 @@
 
     <div class="development"> 
         Powered By: 4o periodo - noite - S.I<br>
-        - Alice Lira
-        - Ana Paula
-        - Carlos Augusto
-        - Ighor Gomes
-        - Maximino Silva
-        - Pedro Quintas <br>
+        - Ana Paula - Matricula: 01538280
+        - Carlos Augusto - Matricula: 01532606
+        - Ighor Gomes - Matricula: 24010714
+        - Maximino Silva  - Matricula: 01374898
+        - Pedro Quintas - Matricula: 01535333 <br>
     </div>
 </html>
