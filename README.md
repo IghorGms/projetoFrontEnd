@@ -7,3 +7,4 @@
  - Php funcional
 
  - Fazer o css do confirmar dados
+- Alert no Botão de comprar já ta funcionando, (NÃO ESQUECER DE TIRAR O COMENTARIO)
