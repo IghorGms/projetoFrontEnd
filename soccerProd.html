@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="reset.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="fitnessProdStyle.css">
         <link rel="shortcut icon" href="MEdia/icons/navIcon.png" type="image/x-icon" />
+        <script src="soccerProd.js"></script>
     </head>
 
 
@@ -56,23 +57,13 @@
         <div class="box-botao">
             
             <div class="button-contact">
-                <a href="contato.html" class="buy-button">Comprar!</a>
+                <a class="buy-button" onclick="Comprar()">Comprar!</a>
             </div>
             <div class="button-contact">
                 <a href="soccer.html" class="buy-button">Ops, quero voltar!</a>
             </div>
             
         </div>
-
-        <script>
-            const button = document.querySelectorAll(".button-contact")
-
-            button.forEach(function(button){
-                button.addEventListener("click", function(){
-                    window.alert("Caro cliente, para compras, iremos te redirecionar para a página de contato!")
-                })
-            })
-        </script>
 
     </body>
 
