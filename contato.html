@@ -98,6 +98,14 @@
                     </optgroup>
                 </select><br>
 
+                <br><form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                    Calcule seu frete:<br>
+                    Quantidade:<input type="number" name="b" value="50" /> +
+                    Frete: <input type="number" name="a" value="10" /><br> Valor Compra + Frete = R$ 
+                    <output name="result">
+                    </output>
+                </form>
+
 
             </div>
 
@@ -132,5 +140,7 @@
             </div>
         </footer>
     </body>
+
+   
 
 </html>
