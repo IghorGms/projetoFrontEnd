@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: border-box;
+}
+
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    margin: 300px 0px 0px 0px
+}
+
+.box{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #b8ecf4;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    width: 500px;
+    height: 450px;
+}
+
+.ConfirmarDados{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold
+    
+}
+
+.botao-padrao{
+    font-size: 25px;
+    border: 1px solid #000000;
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow:  green;
+    box-shadow: inset;
+    box-shadow: 7px 7px;
+}
+
+.botao-padrao:hover{
+   box-shadow: none;
+   transition: 3s;
+}
